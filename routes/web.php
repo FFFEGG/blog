@@ -1,5 +1,6 @@
 <?php
 
+use App\PracticeList;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,7 +15,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $cate = PracticeList::where('type',1)->get();
+
+    $cate = $cate->map(function ($v){
+        return [
+            'name' => $v['name'],
+            'is_practice' => false
+        ];
+    });
+
+    return view('welcome',compact('cate'));
 });
 Auth::routes();
 
@@ -23,4 +33,5 @@ Route::any('/createblogs', 'BlogController@create')->name('createblogs');
 Route::any('/createblogs/{blog}', 'BlogController@editor');
 Route::get('/topics/{blog}', 'BlogController@topics')->name('topics.show');
 Route::get('/guitar/{tag}', 'BlogController@guitar')->name('topics.guitar');
+Route::get('/learnjp', 'JpController@index');
 

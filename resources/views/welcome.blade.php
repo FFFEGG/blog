@@ -2,7 +2,8 @@
 
 @section('content')
     <div class="xl:flex lg:flex xl:mt-10">
-        <img class="image xl:h-64 mb-3 xl:mb-0 bg-gray-100 border-4 border-white shadow rounded" src="./img/guitar.jpg" alt="">
+        <img class="image xl:h-64 mb-3 xl:mb-0 bg-gray-100 border-4 border-white shadow rounded" src="./img/guitar.jpg"
+             alt="">
         <div class="xl:ml-20 mb-3 xl:mb-0 bg-gray-100 border-white border-4 shadow p-2 px-6 rounded">
             <p class="text-2xl">分享在前</p>
             <div class="text-gray-700">
@@ -26,17 +27,21 @@
         <div class="items-center mb-3 xl:mb-0 xl:ml-20 bg-gray-100 border-white border-4 shadow p-2 px-6 rounded">
             <div class="text-2xl">今日练琴打卡</div>
             <div class="mt-4 ">
-                <button class="bg-gray-500 text-white p-2 px-5 rounded mr-3 mb-3">和弦 <span>x</span></button>
-                <button class="bg-teal-500 text-white p-2 px-5 rounded mr-3 mb-3">节奏型 <span>√</span></button>
-                <button class="bg-teal-500 text-white p-2 px-5 rounded mr-3 mb-3">音阶音程 <span>√</span></button>
-                <button class="bg-teal-500 text-white p-2 px-5 rounded mr-3 mb-3">爬格子 <span>√</span></button>
-                <button class="bg-teal-500 text-white p-2 px-5 rounded mr-3 mb-3">扒谱子 <span>√</span></button>
-                <button class="bg-gray-500 text-white p-2 px-5 rounded mr-3 mb-3">即兴演奏 <span>x</span></button>
+                @foreach($cate as $v)
+                    <button class="bg-gray-500 text-white p-2 px-5 rounded mr-3 mb-3">{{$v['name']}}
+                        @if($v['is_practice'])
+                            <span>√</span>
+                        @else
+                            <span>x</span>
+                        @endif
+                    </button>
+                @endforeach
             </div>
-
-            <div class="mt-6 font-bold text-gray-800">
-                连续打卡39天咯，请继续加油吧
-            </div>
+            @if(Auth::user())
+                <div class="mt-6 font-bold text-gray-800">
+                    连续打卡{{ Auth::user()->days }}天咯，请继续加油吧
+                </div>
+            @endif
 
         </div>
     </div>
@@ -58,7 +63,8 @@
 
         <div class="mt-3 bg-gray-100 border-white border-2 shadow p-6">
             <p class="text-xl text-orange-500 font-bold">改编类</p>
-            <p class="text-gray-700 mt-3">包含《一生所爱》《Unravel》改编分析等作品分析。通过《一生所爱》的分析改编分析学习如何变调，通过《Unravel》的改编学习如何巧妙编配泛音。通过对《Revolution》的分析，一次性分析讲透如何改编打板。</p>
+            <p class="text-gray-700 mt-3">
+                包含《一生所爱》《Unravel》改编分析等作品分析。通过《一生所爱》的分析改编分析学习如何变调，通过《Unravel》的改编学习如何巧妙编配泛音。通过对《Revolution》的分析，一次性分析讲透如何改编打板。</p>
         </div>
 
         <div class="mt-3 bg-gray-100 border-white border-2 shadow p-6">
@@ -68,7 +74,8 @@
 
         <div class="mt-3 bg-gray-100 border-white border-2 shadow p-6">
             <p class="text-xl text-orange-500 font-bold">演奏类</p>
-            <p class="text-gray-700 mt-3">Fight核心演奏技法教学，Revolution核心演奏技法教学，吉他各个阶段基本功（每天必练，不管是零基础还是世界大师都要每天练习的必须基本功），吉他各类和弦的不同把位学习（扩展你的和弦让你的和弦更好听）等等。注意，Fight以及Revolution演奏教学不是全曲，而是其中最核心最抓人心最难部分的演奏讲解。Fight讲解为其中的一段最具特点的指法教学，因为这个会了其他基本都可以看谱子弹奏了，这才是Fight的核心。Revolution则是曲子最开始的一段打板和点弦同步进行的演奏部分的教学。</p>
+            <p class="text-gray-700 mt-3">
+                Fight核心演奏技法教学，Revolution核心演奏技法教学，吉他各个阶段基本功（每天必练，不管是零基础还是世界大师都要每天练习的必须基本功），吉他各类和弦的不同把位学习（扩展你的和弦让你的和弦更好听）等等。注意，Fight以及Revolution演奏教学不是全曲，而是其中最核心最抓人心最难部分的演奏讲解。Fight讲解为其中的一段最具特点的指法教学，因为这个会了其他基本都可以看谱子弹奏了，这才是Fight的核心。Revolution则是曲子最开始的一段打板和点弦同步进行的演奏部分的教学。</p>
         </div>
     </div>
 @endsection

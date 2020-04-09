@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="xl:flex">
+    <div class="xl:flex xl:mt-6">
         <div class="xl:w-8/12 rounded p-2 shadow border">
             @foreach($list as $v)
             <a href="/topics/{{$v->id}}" class="flex items-center border-b py-3 justify-between">
@@ -15,8 +15,7 @@
                 </div>
             </a>
             @endforeach
-
-                {{ $list->links() }}
+            {{ $list->links() }}
         </div>
         <div class="w-4/12 ml-3">
             <button>发布文章</button>

@@ -14271,6 +14271,13 @@ video {
   word-wrap: break-word;
 }
 
+.word-wrap {
+  word-wrap: break-word;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
