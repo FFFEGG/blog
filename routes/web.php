@@ -34,4 +34,6 @@ Route::any('/createblogs/{blog}', 'BlogController@editor');
 Route::get('/topics/{blog}', 'BlogController@topics')->name('topics.show');
 Route::get('/guitar/{tag}', 'BlogController@guitar')->name('topics.guitar');
 Route::get('/learnjp', 'JpController@index');
+Route::get('/comic', 'ComicController@index');
+Route::get('/switch', 'SwitchController@index');
 
