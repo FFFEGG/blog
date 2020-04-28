@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75e332a7-45a6-4e41-b6a2-135ab9385eba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Handlers/ImageUploadHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mp3/skycity.m4a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/topics.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/topics.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -141,10 +143,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/mp3" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\laragon\www\blog\public\mp3" />
       <recent name="D:\laragon\www\blog\resources\views\switch" />
       <recent name="D:\laragon\www\blog\resources\views\comic" />
     </key>
@@ -170,7 +173,7 @@
       <workItem from="1586675696680" duration="600000" />
       <workItem from="1586943506350" duration="634000" />
       <workItem from="1587001903938" duration="256000" />
-      <workItem from="1588032868847" duration="652000" />
+      <workItem from="1588032868847" duration="3706000" />
     </task>
     <servers />
   </component>
@@ -193,6 +196,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2573" y="378" key="NewPhpFileDialog" timestamp="1588034963337">
+      <screen x="1920" y="0" width="1600" height="900" />
+    </state>
+    <state x="2573" y="378" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1600.900@1920.0.1600.900" timestamp="1588034963337" />
     <state x="2404" y="98" width="670" height="676" key="search.everywhere.popup" timestamp="1588033676476">
       <screen x="1920" y="0" width="1600" height="900" />
     </state>

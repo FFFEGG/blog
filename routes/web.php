@@ -37,4 +37,4 @@ Route::get('/guitar/{tag}', 'BlogController@guitar')->name('topics.guitar');
 Route::get('/learnjp', 'JpController@index');
 Route::get('/comic', 'ComicController@index');
 Route::get('/switch', 'SwitchController@index');
-
+Route::post('upload_image', 'BlogController@uploadImage')->name('topics.upload_image');
