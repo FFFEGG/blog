@@ -2,22 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75e332a7-45a6-4e41-b6a2-135ab9385eba" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/comic/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/comic/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/jp/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/jp/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/switch/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/switch/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/topics.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/topics.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -132,32 +131,23 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1aCxlQnhVhilisiO5hVi4GNHdnj" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/phpStudy/PHPTutorial/WWW/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\laragon\www\blog\resources\views\switch" />
       <recent name="D:\laragon\www\blog\resources\views\comic" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -175,12 +165,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586486570326</updated>
-      <workItem from="1586486571426" duration="3855000" />
+      <workItem from="1586486571426" duration="4439000" />
+      <workItem from="1586656351902" duration="2626000" />
+      <workItem from="1586675696680" duration="600000" />
+      <workItem from="1586943506350" duration="634000" />
+      <workItem from="1587001903938" duration="256000" />
+      <workItem from="1588032868847" duration="652000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -192,8 +187,15 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2404" y="98" width="670" height="676" key="search.everywhere.popup" timestamp="1588033676476">
+      <screen x="1920" y="0" width="1600" height="900" />
+    </state>
+    <state x="2404" y="98" width="670" height="676" key="search.everywhere.popup/0.0.1920.1040/1920.0.1600.900@1920.0.1600.900" timestamp="1588033676476" />
   </component>
 </project>

@@ -41,10 +41,9 @@
             height: auto !important;
         }
     </style>
-
 </head>
 <body class="bg-mybg">
-<header class=" px-4 py-3 bg-nav shadow">
+<header class=" px-4 py-3 bg-nav shadow  border-t-4 border-b-0 rounded" style="border-color: #ed8936">
     <div class="container mx-auto xl:flex lg:flex  items-center md:justify-between">
         <div class="xl:flex lg:flex">
             <a href="/">
@@ -67,7 +66,6 @@
                     </svg>
                     <p class="mx-3 ">吉他分享</p>
                 </div>
-
             </a>
             <a href="/learnjp">
                 <div class="{{ \Request::path() == 'learnjp' ? 'bg-green-500 text-white font-bold' : 'text-gray-700' }} mb-3 md:mb-0 lg:mb-0 xl:mb-0  flex items-center p-2  border-2 rounded  xl:mr-4 cursor-pointer">

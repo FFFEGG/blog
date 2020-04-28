@@ -21,6 +21,7 @@
         </div>
         @if(Auth::user() && Auth::user()->id == $blog->user_id)
         <a href="/createblogs/{{ $blog->id }}"><button class="bg-teal-500 text-white py-2 px-4 m-6 rounded">编辑</button></a>
+        <a href="/deleteblog/{{ $blog->id }}"><button class="bg-orange-500 text-white py-2 px-4 m-6 rounded">删除</button></a>
         @endif
 
 

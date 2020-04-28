@@ -31,6 +31,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::any('/createblogs', 'BlogController@create')->name('createblogs');
 Route::any('/createblogs/{blog}', 'BlogController@editor');
+Route::any('/deleteblog/{blog}', 'BlogController@deleteblog');
 Route::get('/topics/{blog}', 'BlogController@topics')->name('topics.show');
 Route::get('/guitar/{tag}', 'BlogController@guitar')->name('topics.guitar');
 Route::get('/learnjp', 'JpController@index');

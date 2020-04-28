@@ -77,4 +77,13 @@ class BlogController extends Controller
 
         return view('blog.guitar', compact('list'));
     }
+
+    public function deleteblog(Request $request,Blog $blog)
+    {
+        if ($blog->user->id != Auth::user()->id) {
+            return redirect()->route('topics.guitar', '乐理类')->with('success', '删除失败！');
+        }
+        $blog->delete();
+        return redirect()->route('topics.guitar', '乐理类')->with('success', '删除成功！');
+    }
 }

@@ -1,8 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
+    @if (session('success'))
+        <div class="w-full border rounded bg-green-500 text-gray-800 p-3">
+            {{ session('success') }}
+        </div>
+    @endif
 
     <div class="xl:flex xl:mt-6">
+
         <div class="xl:w-8/12 rounded p-2 shadow border">
             @foreach($list as $v)
             <a href="/topics/{{$v->id}}" class="flex items-center border-b py-3 justify-between">
